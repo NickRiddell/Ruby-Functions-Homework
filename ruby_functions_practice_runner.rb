@@ -64,16 +64,42 @@ puts "The volume is #{cube_volume_result} expected 64"
 sphere_volume_result = sphere_volume(7)
 puts "The volume is #{sphere_volume_result} expected 1436.76"
 ####Can you extend this to calculate other shapes' volumes? (Cylinder, Rectangular Prism, Cone, Capsule)
+cylinder_height = 12
+cylinder_radius = 4
+
+cylinder_volume_result = cylinder_volume(cylinder_radius, cylinder_height)
+puts "The volume is #{cylinder_volume_result} expected 603"
+
+rectangular_prism_height = 7
+rectangular_prism_length = 2
+rectangular_prism_width = 3
+
+rectangular_prism_volume_result = rectangular_prism_volume(rectangular_prism_height, rectangular_prism_length, rectangular_prism_width)
+puts "The volume is #{rectangular_prism_volume_result} expected 42"
+
+cone_height = 3
+cone_radius = 7
+cone_volume_result = cone_volume(cone_height, cone_radius)
+puts "The volume is #{cone_volume_result} expected 153.94"
+
+capsule_height = 3
+capsule_radius = 7
+capsule_volume_result = capsule_volume(capsule_height, capsule_radius)
+puts "The volume is #{capsule_volume_result}"
+
 
 ####http://ruby-doc.org/stdlib-2.1.1/libdoc/date/rdoc/Date.html
 ####Days until christmas, Calculate how many nights there are from today until Christmas morning.
+puts days_until_santa
 
 ####Given a date of birth, calculate how old a person born on that date would be
-
+puts age
 
 #### Create a command line interface using put, gets to interact with the your functions 
 
-
+puts "Enter your date of birth(YYYY-MM-DD)"
+dob = gets.chomp
+puts "You age is #{your_age(dob)}"
 
 
 

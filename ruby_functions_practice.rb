@@ -59,3 +59,51 @@ end
 def sphere_volume(radius)
 	(4 * Math::PI * radius **3)/3
 end
+
+def cylinder_volume(radius, height)
+	(Math::PI * (radius **2) * height)
+end
+
+def rectangular_prism_volume(height, length, width)
+	(height * length * width)
+end
+
+def cone_volume(height, radius)
+	(Math::PI * radius**2 * (height / 3))
+end
+
+def capsule_volume(radius, height)
+	((4 * Math::PI * radius **3)/3) + (Math::PI * (radius **2) * height)
+end
+
+require "date"
+
+def days_until_santa
+	todays_date = Date.today
+	christmas = Date.new(2015,12,25)
+	(christmas - todays_date).to_i
+	
+end
+
+require "date"
+
+def age
+	dob = Date.new(1988,06,12)
+  	now = Date.today
+  	((now - dob)/365).to_i
+end
+
+require "date"
+
+def your_age(banana)
+  now = Date.today
+  dob = Date.parse(banana)
+  ((now - dob)/365).to_i
+end
+
+
+
+
+
+
+
